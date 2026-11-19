@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#210d18">
+  <title>O nosso primeiro mês ❤️</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap');
+    :root{--wine:#6f263f;--rose:#d99aa9;--cream:#fff8f4;--ink:#2a1720}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:#210d18;color:var(--cream);font-family:'DM Sans',sans-serif}
+    .hero{min-height:100svh;position:relative;display:flex;align-items:center;justify-content:center;padding:34px 22px;overflow:hidden;background:linear-gradient(180deg,rgba(25,8,17,.28),rgba(25,8,17,.88)),url('assets/foto-1.jpeg') center 35%/cover}
+    .hero:after{content:"";position:absolute;inset:14px;border:1px solid rgba(255,235,226,.42);pointer-events:none}
+    .hero-content{position:relative;z-index:1;text-align:center;max-width:650px}
+    .eyebrow{letter-spacing:.28em;text-transform:uppercase;font-size:10px;color:#f0c5ce}
+    h1,.section-title{font-family:'Playfair Display',serif;font-weight:500}
+    h1{font-size:clamp(48px,11vw,88px);line-height:.98;margin:22px 0 16px}
+    .hero p{font-size:14px;letter-spacing:.05em;color:#f8e8e8}
+    .date{margin-top:30px;font-size:12px;letter-spacing:.16em;color:#f2cbd2}
+    .scroll{display:inline-block;margin-top:48px;color:#fff;text-decoration:none;font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+    .scroll span{display:block;font-size:22px;margin-top:8px;animation:bob 1.5s infinite}
+    @keyframes bob{50%{transform:translateY(7px)}}
+    main{max-width:980px;margin:auto;padding:70px 22px 90px}
+    .intro{text-align:center;margin:0 auto 48px;max-width:650px}
+    .small-heart{color:var(--rose);font-size:24px}
+    .section-title{font-size:clamp(32px,7vw,48px);margin:12px 0;color:#fff0ec}
+    .intro p{color:#d9c4cb;line-height:1.8;font-size:14px}
+    .gallery{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:42px 0 76px;align-items:center}
+    .photo{margin:0;overflow:hidden;border-radius:3px;background:#351a27;box-shadow:0 18px 45px #10060b88}
+    .photo:first-child{transform:translateY(28px)}
+    .photo img{display:block;width:100%;height:clamp(250px,62vw,520px);object-fit:cover}
+    .photo:first-child img{object-position:center 35%}
+    .photo:last-child img{object-position:center 30%}
+    .letter{background:var(--cream);color:var(--ink);padding:clamp(28px,7vw,62px);max-width:760px;margin:0 auto;border-radius:3px;position:relative;box-shadow:0 24px 60px #10060b66}
+    .letter:before{content:"";position:absolute;inset:12px;border:1px solid #d8b7bd;pointer-events:none}
+    .letter .date{color:#986174;margin:0 0 24px;font-size:11px}
+    .letter h2{font:500 clamp(27px,6vw,39px) 'Playfair Display',serif;margin:0 0 26px;color:#54263a}
+    .letter p{font-size:14px;line-height:1.95;margin:0 0 15px;color:#4c3840}
+    .signature{font:italic 24px 'Playfair Display',serif;color:#8b405b;margin-top:28px}
+    .ending{text-align:center;padding:76px 10px 10px}
+    .ending .big{font-size:36px;color:#e8a9b9}
+    .ending p{font:500 28px 'Playfair Display',serif;margin:12px 0;color:#fff0ec}
+    .ending small{color:#c7aeb8;letter-spacing:.12em;font-size:10px;text-transform:uppercase}
+    footer{text-align:center;padding:25px;color:#987c88;font-size:10px;letter-spacing:.12em}
+    .heart{position:fixed;bottom:-30px;color:#e9a6b7;pointer-events:none;z-index:5;animation:float 5s linear forwards}
+    @keyframes float{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+    @media(max-width:560px){main{padding-top:55px}.gallery{gap:10px}.photo:first-child{transform:translateY(17px)}.photo img{height:clamp(230px,78vw,390px)}.letter p{font-size:13px}.hero{background-position:52% center}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <div class="eyebrow">Uma história que está a começar</div>
+      <h1>O nosso<br>primeiro mês</h1>
+      <p>Um mês de nós. E tantos momentos ainda por viver.</p>
+      <div class="date">12 · 11 · 2026 &nbsp; ♡</div>
+      <a class="scroll" href="#nossa-historia">Continua a ler <span>⌄</span></a>
+    </div>
+  </header>
+
+  <main id="nossa-historia">
+    <section class="intro">
+      <div class="small-heart">♥</div>
+      <h2 class="section-title">Para a minha amada</h2>
+      <p>Há começos que merecem ser guardados. Este é um pequeno espaço para celebrar o nosso primeiro capítulo.</p>
+    </section>
+
+    <section class="gallery" aria-label="As tuas fotografias">
+      <figure class="photo"><img src="assets/foto-1.jpeg" alt="Uma fotografia especial"></figure>
+      <figure class="photo"><img src="assets/foto-2.jpeg" alt="Um sorriso especial"></figure>
+      <figure class="photo"><img src="assets/foto-3.jpeg" alt="Um conjunto de momentos especiais"></figure>
+      <figure class="photo"><img src="assets/foto-4.jpeg" alt="Um retrato especial"></figure>
+    </section>
+
+    <article class="letter">
+      <div class="date">12/11/2026 · ❤️💍</div>
+      <h2>Feliz 1 mês de namoro para nós, minha amada! ❤️</h2>
+      <p>Hoje quero celebrar este primeiro mês e agradecer-te por teres entrado na minha vida. Ainda estamos no começo, mas já tenho a certeza de que quero viver muito mais ao teu lado.</p>
+      <p>Sei que tenho as minhas falhas e que nem sempre vou acertar, mas quero ser um homem cada vez melhor para ti. Quero que encontres em mim alguém em quem possas confiar, que te respeite e que te faça sentir especial.</p>
+      <p>Não espero uma relação perfeita, quero apenas que saibamos cuidar um do outro e que nunca percamos a vontade de fazer resultar aquilo que estamos a construir.</p>
+      <p>Que este seja apenas o primeiro de muitos meses e anos juntos. Ainda temos muito para viver, meu amor!</p>
+      <p>Sou feliz por te ter. Amo-te! ❤️💍</p>
+      <div class="signature">Com amor, sempre. ♥</div>
+    </article>
+
+    <section class="ending">
+      <div class="big">∞</div>
+      <p>Que seja o primeiro de muitos.</p>
+      <small>12 de novembro de 2026</small>
+    </section>
+  </main>
+  <footer>FEITO COM AMOR · PARA NÓS DOIS</footer>
+  <script>
+    // Pequenos corações discretos a aparecer ocasionalmente.
+    function makeHeart(){
+      const h=document.createElement('span');
+      h.className='heart'; h.textContent='♥';
+      h.style.left=Math.random()*100+'vw';
+      h.style.fontSize=(10+Math.random()*13)+'px';
+      h.style.animationDuration=(4+Math.random()*3)+'s';
+      document.body.appendChild(h);
+      setTimeout(()=>h.remove(),7500);
+    }
+    setInterval(makeHeart,1700);
+  </script>
+</body>
+</html>

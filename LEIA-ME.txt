@@ -1,0 +1,13 @@
+SITE — O NOSSO PRIMEIRO MÊS
+
+1. O ficheiro principal é index.html.
+2. A pasta assets contém as duas fotografias já ligadas ao site.
+3. Para publicar no GitHub Pages:
+   - Cria um repositório público no GitHub.
+   - Envia index.html, a pasta assets e este ficheiro.
+   - Abre Settings > Pages.
+   - Em Build and deployment, escolhe Deploy from a branch.
+   - Seleciona a branch main e a pasta /(root), depois Save.
+   - Aguarda a publicação e abre o endereço indicado pelo GitHub Pages.
+
+Não alteres os nomes foto-1.jpeg e foto-2.jpeg sem também atualizar o index.html.
